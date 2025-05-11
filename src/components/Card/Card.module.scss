@@ -31,10 +31,16 @@
     border-radius: 4px;
   }
 
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
   &__color {
     width: 120px;
     height: 50px;
-    margin: 5px;
+    margin: 10px;
 
     font-size: 20px;
     background-color: #fff;
@@ -46,14 +52,21 @@
     }
   }
 
+  &__sizes {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
   &__size {
+    height: 30px;
+    padding: 0 8px;
+
     display: flex;
     align-items: center;
     gap: 10px;
 
-    margin: 4px;
-    padding: 6px 12px;
-    font-size: 20px;
+    font-size: 15px;
     border: 2px solid #ccc;
     background-color: #fff;
     border-radius: 5px;
@@ -67,4 +80,14 @@
       cursor: not-allowed;
     }
   }
+}
+
+.addCart {
+  width: 100%;
+  padding: 10px;
+  background: #000;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
 }

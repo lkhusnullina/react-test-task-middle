@@ -28,9 +28,7 @@ function Card({ product, color, onColorChange, allSizes }) {
             key={src}
             src={src}
             alt={product.name}
-            className={`${styles.card__preview} ${
-              selectedImageIndex === index ? styles.selected : ""
-            }`}
+            className={`${styles.card__preview} ${selectedImageIndex === index ? styles.selected : ""}`}
             onClick={() => setSelectedImageIndex(index)}
           />
         ))}
@@ -46,7 +44,7 @@ function Card({ product, color, onColorChange, allSizes }) {
         </div>
       )}
 
-      <div>
+      <div className={styles.card__info}>
         <h2 className={styles.card__title}>{product.name}</h2>
         <p className={styles.card__description}>{color.description}</p>
         <p className={styles.card__price}>{color.price} ₽</p>
@@ -61,7 +59,7 @@ function Card({ product, color, onColorChange, allSizes }) {
             </button>
           ))}
         </div>
-        <div>
+        <div className={styles.card__sizes}>
           <h4>Выбор размера:</h4>
           {allSizes.map((size) => {
             const isAvailable = color.sizes.includes(size.id);
@@ -81,6 +79,7 @@ function Card({ product, color, onColorChange, allSizes }) {
             );
           })}
         </div>
+        <button className={styles.addCart}>Добавить в корзину</button>
       </div>
     </div>
   );
