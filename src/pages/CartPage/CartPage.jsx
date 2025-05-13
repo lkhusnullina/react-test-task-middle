@@ -70,7 +70,7 @@ export default function CartPage() {
               <p>Цвет: {color.name}</p>
               <p>Размер: {size.label}</p>
               <p>Цена: {color.price} ₽</p>
-              <button onClick={() => handleRemoveProduct(product.id, color.id, size.id)}>Удалить</button>
+              <button className={styles.cart__btnRemove} onClick={() => handleRemoveProduct(product.id, color.id, size.id)}>Удалить</button>
             </div>
           ))
         ) : (
