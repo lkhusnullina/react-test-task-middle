@@ -22,7 +22,7 @@ function Catalog() {
               className={styles.products__link}
             >
               <img
-                src={product.colors[0].images[0]}
+                src={`${process.env.PUBLIC_URL}${product.colors[0].images[0]}`}
                 alt={product.name}
                 className={styles.products__image}
               />

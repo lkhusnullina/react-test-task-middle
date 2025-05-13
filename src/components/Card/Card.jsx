@@ -46,7 +46,7 @@ function Card({ product, color, onColorChange, allSizes }) {
           {color.images.map((src, index) => (
             <img
               key={src}
-              src={src}
+              src={`${process.env.PUBLIC_URL}${src}`}
               alt={product.name}
               className={`${styles.card__preview} ${selectedImageIndex === index ? styles.selected : ""}`}
               onClick={() => setSelectedImageIndex(index)}
@@ -58,7 +58,7 @@ function Card({ product, color, onColorChange, allSizes }) {
           <div>
             <img
               className={styles.card__image}
-              src={color.images[selectedImageIndex]}
+              src={`${process.env.PUBLIC_URL}${color.images[selectedImageIndex]}`}
               alt={product.name}
             />
           </div>

@@ -13,7 +13,7 @@ function Header() {
       <Link className={styles.header__link} to="/cart">
         <img
           className={styles.header__icon}
-          src="images/cart.svg"
+          src={`${process.env.PUBLIC_URL}/images/cart.svg`}
           alt="корзина"
         />
         {count.length}

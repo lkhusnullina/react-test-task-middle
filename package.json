@@ -1,7 +1,7 @@
 {
   "name": "react-test-task",
   "version": "0.1.0",
-  "homepage": "https://lkhusnullina.github.io/react-test-task-middle",
+  "homepage": "https://lkhusnullina.github.io/react-test-task-middle/",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^2.8.1",

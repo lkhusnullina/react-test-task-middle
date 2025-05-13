@@ -63,7 +63,7 @@ export default function CartPage() {
               className={styles.cart__card}>
               <img
                 className={styles.cart__image}
-                src={color.images[0]}
+                src={`${process.env.PUBLIC_URL}${color.images[0]}`}
                 alt={product.name}
               />
               <h3>{product.name}</h3>
