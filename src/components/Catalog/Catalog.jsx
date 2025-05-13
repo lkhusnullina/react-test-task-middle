@@ -12,22 +12,26 @@ function Catalog() {
     });
   }, []);
 
-
   return (
     <div className={styles.products}>
       {products.map((product) => (
         <div key={product.id} className={styles.products__card}>
-          <h4 className={styles.products__name}>{products.name}</h4>
-          <Link to={`/product/${product.id}`} className={styles.products__link}>
+          {product.colors?.[0]?.images?.[0] && (
+            <Link
+              to={`/product/${product.id}`}
+              className={styles.products__link}
+            >
               <img
                 src={product.colors[0].images[0]}
                 alt={product.name}
                 className={styles.products__image}
               />
             </Link>
+          )}
+          <h3 className={styles.products__name}>{product.name}</h3>
         </div>
       ))}
     </div>
   );
 }
-export default Catalog
+export default Catalog;
