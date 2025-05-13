@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import { Provider } from "react-redux";
 import { store } from "./store/store";
-import { HashRouterRouter as Router } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
 import "./styles/index.css";
 
 const rootView = document.getElementById("root");
