@@ -2,7 +2,7 @@
 
 ### Деплой проекта
 
-
+https://lkhusnullina.github.io/react-test-task-middle/
 
 #### Запуск проекта
 
